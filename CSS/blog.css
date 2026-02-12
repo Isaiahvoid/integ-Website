@@ -1,0 +1,267 @@
+/* the outer background*/
+body {
+  font-family: tahoma, sans-serif;
+  margin: 0px;
+  background-color:#000000  ;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* The Main Rounded container */
+.site-container {
+  background-color: #0C121E;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.navbar {
+  background-color: #060912;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+/* The nav bar (top-brand) */
+.navbar ul{
+  list-style:none;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  gap: 20px; 
+}
+
+/* logo design */
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.logo span {
+  color: #F9D423;
+}
+
+
+
+.navbar a{
+  color: #9CA3AF;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.navbar a:hover{
+  background-color:#1E1E1E;
+  color: #F9D423;
+  font-weight:bold;
+  
+}
+
+.navbar li{
+  float: left;
+}
+
+
+h1 {
+  color: #FFFFFF;
+  font-size: 48px;
+  margin: 0 0 20px 0;
+  background-color: transparent;
+}
+
+/* container of cards */
+.blog-grid{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* individual card styling */
+.blog-card {
+    background-color: #F5F5F5;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* place holder of the top image part */
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 43%;
+  border-bottom: 2px solid #EEE;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center center;
+}
+
+.blog-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+/* text area inside the card */
+.card-content{
+    background-color: #FDFDFD;
+    padding: 20px;
+    
+}
+
+.category {
+    color: #a37d7d;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-content h3 {
+    color: #333;
+    margin: 10px 0 20px 0;
+    font-size: 20px;
+}
+
+.read-link {
+    color: #333;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 14px;
+}
+/* turns yellow hover on the link */
+.read-link:hover {
+    color: #F9D423;
+}  
+
+
+
+.blog-header {
+  text-align: center;
+  margin: 50px 0;
+}
+
+/* center title */
+.blog-title {
+  font-size: 3.5rem;
+  color: #FFFFFF;
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.blog-title span {
+  color: #F9D423;
+  text-shadow: 0 0 10px rgba(249, 212, 35, 0.3);
+}
+.blog-hook {
+  color: #9CA3AF;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 10px;
+
+}
+
+/* --- Contact Page Specific Styles --- */
+
+/* Full-width header image */
+.contact-main-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 3px solid #F9D423;
+}
+
+/* Floating container for the contact info */
+.contact-container {
+    max-width: 800px;
+    margin: -60px auto 50px auto; 
+    background-color: #060912; 
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    border: 1px solid #1f2937;
+    text-align: center;
+}
+
+.contact-description {
+    color: #9CA3AF;
+    font-style: italic;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* The yellow-bordered boxes for Email and Socials */
+.contact-link-card {
+    border: 1px solid #F9D423;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+    background: rgba(249, 212, 35, 0.02);
+}
+
+.contact-link-card:hover {
+    background: rgba(249, 212, 35, 0.08);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(249, 212, 35, 0.1);
+}
+
+.contact-link-card h3 {
+    color: #F9D423;
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Social Media Links */
+.contact-socials-list {
+    margin: 15px 0;
+    color: white;
+}
+
+.contact-socials-list a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.contact-socials-list a:hover {
+    color: #F9D423;
+}
+
+.contact-socials-list i {
+    color: #F9D423;
+}
+
+/* The big "Send Message" button */
+.contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 35px;
+    background-color: #F9D423;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px rgba(249, 212, 35, 0.4);
+    transform: scale(1.05);
+}
