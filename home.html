@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/home.css">
+</head>
+<body>
+    <div class="site-container">
+
+        <header class="navbar">
+            <div class="logo">Home<span> Page.</span></div>
+            <nav>
+    <ul class="nav-links">
+        <li style="color: #F9D423; font-weight: bold;">HOME</li>
+        <li><a href="biography.html">ABOUT ME</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+
+        <li class="hamburger-li">
+            <input type="checkbox" id="drawer-toggle">
+            <label for="drawer-toggle" class="hamburger-icon">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <div class="side-drawer">
+                <label for="drawer-toggle" class="drawer-close">&times;</label>
+
+                <div class="drawer-content">
+                    <h2 class="drawer-log">MENU</h2> <hr class="drawer-divider">
+                    
+                    <div class="drawer-links-main">
+                        <a href="home.html">Home</a>
+                        <a href="biography.html">About Me</a>
+                        <a href="photo.html">Gallery</a>
+                    </div>
+
+                    <a href="home.html" class="landing-link">Back to Landing Page</a>
+                </div>
+            </div>
+            <div class="drawer-overlay"></div>
+        </li>
+    </ul>
+</nav>
+        </header>
+        <main class="hero-section">
+            <div class="hero-text">
+                
+                <h1>I'm <span class="highlight">Isaac Bascos.</span></h1>
+                <p class="description">
+                    A CS student who wants to learn and share my experiences and
+                    insights about the world of technology.</p>
+                <a href="biography.html" class="hero-btn">Read my Journey</a>
+            </div>
+            <div class="hero-img-container">
+                <img src="IMAGES/profile.jpg" alt="Self photo">
+            </div>
+        </main>
+    </div>
+    
+</body> 
+</html>
